@@ -7,8 +7,6 @@
 // 2. Base stuff
 @import
   'base/fonts',
-  'base/typography',
-  'base/helpers',
   'base/base';
  
 // 3. Configuration and helpers
@@ -32,6 +30,3 @@
 // 6. Page-specific styles
 @import
   'pages/home';
-h1{
-  font-family: $logo-font;
-}

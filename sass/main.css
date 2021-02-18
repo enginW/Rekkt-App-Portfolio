@@ -6,6 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -706,7 +707,153 @@ li, ul {
   list-style: none;
 }
 
-h1 {
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header {
+  width: 15%;
+  height: 100vh;
+  position: fixed;
+  -webkit-box-shadow: 39px 6px 37px -13px rgba(0, 0, 0, 0.67);
+          box-shadow: 39px 6px 37px -13px rgba(0, 0, 0, 0.67);
+}
+
+header .logo-section {
+  width: 100%;
+  height: 15%;
+  text-align: center;
+  padding: 5px 20px;
+}
+
+header .logo-section h1 {
+  font-size: 50px;
+  color: #25b1b0;
   font-family: "Anton", sans-serif;
+  line-height: 50px;
+  letter-spacing: 5px;
+}
+
+header nav {
+  width: 100%;
+  height: 34%;
+  text-transform: uppercase;
+}
+
+header nav .nav-container {
+  background-color: #262930;
+}
+
+header nav .nav-container .nav-item {
+  width: 100%;
+}
+
+header nav .nav-container .nav-item a {
+  width: 100%;
+  display: inline-block;
+  color: #25b1b0;
+  font-size: 20px;
+  padding: 15px;
+  font-family: "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Monaco", monospace;
+  text-align: right;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+header nav .nav-container .nav-item a:hover {
+  background-color: #25b1b0;
+  color: white;
+  -webkit-transition: 500ms all;
+  transition: 500ms all;
+}
+
+header aside {
+  width: 100%;
+  height: 51%;
+  padding-top: 15px;
+  background-color: #262930;
+  text-align: right;
+  padding-right: 20px;
+}
+
+header aside h5 {
+  color: #25b1b0;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+header aside h5:hover {
+  color: white;
+  cursor: pointer;
+}
+
+header aside h5::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f007";
+  color: #25b1b0;
+  font-weight: 900;
+  padding-left: 10px;
+}
+
+header aside .other-list {
+  margin-bottom: 20px;
+}
+
+header aside .other-list .other-item {
+  margin-bottom: 5px;
+}
+
+header aside .other-list .other-item a {
+  font-family: "Quicksand", sans-serif;
+  padding: 10px 5px;
+  color: #25b1b0;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+header aside .other-list .other-item a:hover {
+  color: white;
+  -webkit-transition: 500ms all;
+  transition: 500ms all;
+}
+
+header aside .social-media-icons {
+  width: 100%;
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 10px;
+}
+
+header aside .social-media-icons .social-item {
+  width: 30%;
+  color: #25b1b0;
+  padding: 15px;
+  font-size: 19px;
+  border: 1px solid #25b1b0;
+  text-align: center;
+  margin: 3px;
+}
+
+header aside .social-media-icons .social-item:hover i {
+  -webkit-transition: 500ms all;
+  transition: 500ms all;
+  color: white;
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+}
+
+header aside .copyright {
+  margin-top: 25px;
+  font-size: 13px;
 }
 /*# sourceMappingURL=main.css.map */
